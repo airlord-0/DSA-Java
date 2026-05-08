@@ -38,6 +38,7 @@ public class twodaraays {
             System.out.println("");
             
         }   
+        sc.close();
 
     }
 }
