@@ -1,22 +1,28 @@
-
-
+import java.lang.reflect.Array;
+import java.util.*;
+// bubble sort time complexity O(n^2)
 public class bubble_sort {
-    public static void main (String args[]){
-        int []arr={9,8,7,6,5,4,3,2,1};
-        for (int j=0;j<arr.length;j++){
-        for(int i=0;i<arr.length-i-1;i++){
-            if(arr[i]>arr[i+1]){
-                int temp=arr[i];
-                arr[i]=arr[i+1];
-                arr[i+1]=temp;
-                
+    public static void main (String [] args) {
+        int[]a = {7,8,3,2,1};
+        System.out.println(Arrays.toString(a) + " is the unsorted array");
+        // we need 2 loops outer loop controls how many times the inner loop has to sort elements 
+        // while inner loop compares adjescent elements and swaps them in a given condition 
+        // the inner loop pushes the largest element to the last in each iteration 
+        int temp=0;
+
+        for (int j=0; j<a.length-1; j++) {
+            for (int i=0; i<a.length-j-1; i++){
+                if (a[i]>a[i+1]) {
+                    temp=a[i+1];
+                    a[i+1]=a[i];
+                    a[i]=temp;
+                }
+
             }
-
         }
+        System.out.println(Arrays.toString(a));
+        
+        
+       
     }
-    for (int i=0;i<arr.length;i++) {
-        System.out.print(arr[i]+" ");
-    }
-
-}
 }
