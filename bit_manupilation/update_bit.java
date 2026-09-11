@@ -37,6 +37,7 @@ public class update_bit {
         System.out.println(new_number);
     }
     System.out.println("I coded this debuged it solved it all by myself only because I'm able to think clearly I take it as a win :) I'm gonna be even smarter ");
+    sc.close();
 
     }
 }

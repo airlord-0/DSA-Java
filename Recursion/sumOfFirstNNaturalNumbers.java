@@ -1,25 +1,24 @@
 package Recursion;
 public class sumOfFirstNNaturalNumbers {
-
-    public static void main ( String[] args) {
-        int i = 1;
-        int n = 5; 
+    public static void main (String[] args) {
+        // objective is to calculate the sum of first n natural numbers 
         int sum = 0;
-        summer (i,n,sum);
-
+        int n = 5;
+        int i = n;
+        summer (i,sum,n);
     }
-
-    public static void summer (int i, int n, int sum ) {
-        if (i==n) {
-            sum += i;
+    public static void summer (int i, int sum, int n ) {
+        if (i==1) {
+            sum +=i; 
             System.out.println(sum);
             return;
         }
-        sum+=i;
-        System.out.print(sum + " ");
-        summer (i+1, n,sum);
+        sum +=i;
+        summer(i-1,sum,n);
 
         
 
     }
+
 }
+
