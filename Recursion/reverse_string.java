@@ -3,7 +3,7 @@ package Recursion;
 
 public class reverse_string {
     public static void main (String[] args) {
-        String name = "pavan";
+        String name = "argentina";
         int n = name.length();
         reverser(name,n-1);
 
